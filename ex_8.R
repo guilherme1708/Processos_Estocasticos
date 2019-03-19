@@ -1,4 +1,4 @@
-ic.m <- function(x,sigma2,conf.level=0.95){
+ic.m <- function(x,sigma2,conf.level=0.95){ # Função para calcular o Intervalo de confiança
   n<-length(x)
   xbarra<-mean(x)
   z<-qnorm((1+conf.level)/2)
